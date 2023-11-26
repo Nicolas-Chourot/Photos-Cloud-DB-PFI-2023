@@ -70,7 +70,7 @@ if (strcmp($viewName, "photoList") == 0) {
             $sortByLikeCheck <i class="menuIcon fa fa-heart mx-2"></i>Photos les plus aimées
          </a>
          <a href="photosList.php?sort=keywords" class="dropdown-item">
-            $sortByKeywords <i class="menuIcon fa fa-search mx-2"></i>Photos par mot-clés
+            $sortByKeywords <i class="menuIcon fa fa-search mx-2"></i>Photos par mots-clés
          </a> 
          <a href="photosList.php?sort=owners" class="dropdown-item">
             $sortByOwners <i class="menuIcon fa fa-users mx-2"></i>Photos par créateur
