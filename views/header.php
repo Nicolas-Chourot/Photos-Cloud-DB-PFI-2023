@@ -92,7 +92,7 @@ if (strcmp($viewName, "photoList") == 0) {
     if ($sortType == "keywords") {
         $viewHeadCustom = <<<HTML
            <div class="searchContainer">
-                <input type="search" class="form-control" placeholder="Recherche par mot-clés" id="keywords" />
+                <input type="search" class="form-control" placeholder="Recherche par mots-clés" id="keywords" />
                 <i class="cmdIcon fa fa-search" id="setSearchKeywordsCmd"></i>
             </div>
         HTML;
