@@ -18,9 +18,13 @@ function compareDate($a, $b)
 {
     $dateA = strtotime($a->CreationDate);
     $dateB = strtotime($b->CreationDate);
-    if ($dateA == $dateB)
-        return 0;
-    return ($dateA < $dateB) ? 1 : -1;
+
+    return $dateB - $dateA; // décroissant
+    /* 
+        if ($dateA == $dateB)
+            return 0;
+        return ($dateA < $dateB) ? 1 : -1;
+    */
 }
 function compareOwner($a, $b)
 {
