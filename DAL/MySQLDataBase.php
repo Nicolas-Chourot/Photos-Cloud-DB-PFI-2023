@@ -544,6 +544,7 @@ final class MySQLDataBase
                     $this->password
                 );
                 $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    if ( $this->autoCommit)
                 $this->beginTransaction();
             } catch (PDOException $e) {
                 var_dump($e);
