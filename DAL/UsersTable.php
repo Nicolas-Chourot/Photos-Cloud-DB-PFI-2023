@@ -55,7 +55,7 @@ final class UsersTable extends MySQLTable
             $userId = $userToRemove->Id;
             LikesTable()->deleteWhere("UserId = $userId");
             PhotosTable()->deleteWhere("OwnerId = $userId");
-            LikesTable()->updatePhotosLikesCount();
+           // LikesTable()->updatePhotosLikesCount();
             unlink($userToRemove->Avatar);
             return parent::delete($id);
         }

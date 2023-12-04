@@ -5,7 +5,7 @@
     include_once 'DAL/LikesTable.php';
     function DB()
     {
-        return MySQLDataBase::getInstance('PhotosCloudDB');
+        return MySQLDataBase::getInstance('PhotosCloudDBDemo');
     }
     function UsersTable()
     {
