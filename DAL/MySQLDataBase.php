@@ -433,22 +433,6 @@ abstract class MySQLTable
         $sql = "DELETE FROM $tableName";
         $this->_DB->nonQuerySqlCmd($sql);
     }
-    public static function JoinHelper(
-        $tableX,
-        $JoinTable,
-        $tableY,
-        $selection,
-        $criteria
-    ) {
-        $fkX = mb_substr($tableX, 0, -1) . 'Id';
-        $fkY = mb_substr($tableY, 0, -1) . 'Id';
-        $sql = "SELECT $selection 
-                FROM $tableX, $JoinTable, $tableY 
-                WHERE $JoinTable.$fkX = $tableX.Id 
-                AND $JoinTable.$fkY = $tableY.Id 
-                AND $criteria";
-        return $sql;
-    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
